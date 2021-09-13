@@ -16,6 +16,8 @@ def user(name):
 @app.errorhandler(404)
 def page_not_found(errmsg):
     return render_template("error/404.html", errmsg=errmsg)
+
+# Internal Server Error thing    
 @app.errorhandler(500)
 def page_not_found(errmsg):
     return render_template("error/500.html", errmsg=errmsg)    
